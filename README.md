@@ -2,6 +2,8 @@
 
 This is a tool to google-translate a text file except for the lines you filter out specifically -- leave them untranslated.
 
+I built it to translate source code files that had heaps of comments from Dutch to English.
+
 ```shell
 usage: filter-translate.py [-h] [--version] [--filter= FILTER] [-s SOURCE_LANGUAGE] [-t TARGET_LANGUAGE] [--encoding ENCODING] infile outfile
 
