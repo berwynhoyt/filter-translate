@@ -23,7 +23,7 @@ If you need a more clever filter than regex then you will need to write a filter
 
 ## Installation
 
-It is necessary to set up a google cloud translate account. It's payware but the give you something like a gigabyte free:
+It is necessary to set up a google cloud translate account. It's payware but they give you half a gigabyte per month for free, so you can do plenty of translations for free:
 
 1. Set up google cloud translate. It involves several steps that you've got to get right: [described here](https://cloud.google.com/translate/docs/setup).
 2. Set environment variable GOOGLE_APPLICATION_CREDENTIALS to point to your cred.json file that you downloaded in step 1.
