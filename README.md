@@ -4,8 +4,8 @@ This is a tool to google-translate a text file except for the lines you filter o
 
 I built it to translate source code files that had heaps of comments from Dutch to English.
 
-```shell
-usage: filter-translate.py [-h] [--version] [--filter= FILTER] [-s SOURCE_LANGUAGE] [-t TARGET_LANGUAGE] [--encoding ENCODING] infile outfile
+```
+usage: filter-translate.py [-h] [--version] [--filter=FILTER] [-s SOURCE_LANGUAGE] [-t TARGET_LANGUAGE] [--encoding ENCODING] infile outfile
 
 options:
   -h, --help            show this help message and exit
@@ -17,9 +17,9 @@ options:
   -t TARGET_LANGUAGE, --target_language TARGET_LANGUAGE
                         Target language (2-letter ISO639-2 codes); default=en
   --encoding ENCODING   Character encoding used to interpret the in/out files; default=utf-8
+```
 
 If you need a more clever filter than regex then you will need to write a filter function based on the regex example filter in this program.
-```
 
 ## Installation
 
