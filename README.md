@@ -24,5 +24,6 @@ If you need a more clever filter than regex then you will need to write a filter
 It is necessary to set up a google cloud translate account. It's payware but the give you something like a gigabyte free:
 
 1. Set up google cloud translate. It involves several steps that you've got to get right: [described here](https://cloud.google.com/translate/docs/setup).
-2. pip install --upgrade google-cloud-translate
+2. Set environment variable GOOGLE_APPLICATION_CREDENTIALS to point to your cred.json file that you downloaded in step 1.
+3. Run `pip install --upgrade google-cloud-translate`
 
