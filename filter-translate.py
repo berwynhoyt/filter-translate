@@ -16,6 +16,8 @@ from google.cloud import translate
 
 class TranslationError: pass
 
+Keep_incomplete_files = False       # for debugging
+
 class Translator:
     def __init__(self, in_lang='nl', out_lang='en', line_filter=None, encoding='utf-8', filter_data=None, project_id=None):
         """ Init translator
@@ -113,9 +115,13 @@ class Translator:
         try:
             self.translate_lines(lines, output_lines)
         finally:
-            # output at least as far as we got
-            with open(out_filename, 'w', encoding=self.encoding) as output:
-                output.write(''.join(output_lines))
+            if Keep_incomplete_files:
+                # output at least as far as we got
+                with open(out_filename, 'w', encoding=self.encoding) as output:
+                    output.write(''.join(output_lines))
+                return
+        with open(out_filename, 'w', encoding=self.encoding) as output:
+            output.write(''.join(output_lines))
 
 
 def regex_filter(line, regex_data):
