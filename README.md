@@ -10,7 +10,7 @@ usage: filter-translate.py [-h] [--version] [--filter= FILTER] [-s SOURCE_LANGUA
 options:
   -h, --help            show this help message and exit
   --version             show program version number and exit
-  --filter= FILTER      Prefix filter with + or -. Translate only lines that +do or -do not match regex. e.g.
+  --filter=FILTER       Prefix filter with + or -. Translate only lines that +do or -do not match regex. e.g.
                         --filter='+(^//)|(^#)'
   -s SOURCE_LANGUAGE, --source_language SOURCE_LANGUAGE
                         Source language (2-letter ISO639-2 codes); default=nl
