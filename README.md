@@ -29,3 +29,8 @@ It is necessary to set up a google cloud translate account. It's payware but the
 2. Set environment variable GOOGLE_APPLICATION_CREDENTIALS to point to your cred.json file that you downloaded in step 1.
 3. Run `pip install --upgrade google-cloud-translate`
 
+## Run it
+
+`python filter-translate.py --help`
+
+Also take a look at `example.sh` to show you how to translate a whole tree of selected files.
